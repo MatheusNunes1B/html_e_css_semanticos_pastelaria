@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #222;
+    font-family: "Barlow", sans-serif;
+    background-color: #fff8f0;
+    width: 100%;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #d97706;
+}
+
+.header {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.logo {
+    width: clamp(8rem, 20vw, 12.5rem);
+    height: auto;
+}
+
+.menu {
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+.menu_links {
+    list-style: none;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.banner p {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    padding-left: 1rem;
+    padding-right: 4rem;
+}
+
+.botao {
+    border: 1px solid #d97706;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #d97706;
+    display: inline-block;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.coluna {
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cardapio {
+    border-top: 1px dashed #d97706;
+    width: 100%;
+    max-width: 44rem;
+    margin: 6rem auto 0 auto;
+    text-align: center;
+    padding: 4rem 1rem 1rem 1rem;
+}
+
+.cardapio_categoria {
+    text-align: left;
+    color: #d97706;
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cardapio_item {
+    padding-top: 1.2rem;
+    text-align: left;
+}
+
+.cardapio_nome {
+    font-weight: 700;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+}
+
+.cardapio_preco {
+    font-size: 0.8rem;
+    color: #d97706;
+}
+
+.cardapio_descricao {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.link_whatsApp img {
+    height: clamp(3rem, 5vw, 3.7rem);
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+}
+
+footer {
+    margin-top: 20vh;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: #fff;
+    background-color: #d97706;
+}
+
+@media (max-width: 900px) {
+
+    .coluna {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .banner p {
+        text-align: center;
+        padding: 0 1.5rem;
+    }
+
+}
